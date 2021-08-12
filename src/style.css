@@ -95,6 +95,29 @@ nav ul li:hover {
   border-bottom: 2px solid #e93a7d;
 }
 
+/* Footer  */
+.icon{
+  width: 24px;
+  height: 24px;
+}
+
+footer{
+  margin-top: -50px;
+  padding-top: 100px ;
+  background: linear-gradient(white,var(--c-light));
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container{
+  display: flex;
+  justify-content: center;
+  gap:50px;
+  flex-wrap: wrap;
+}
+
 /* Blogs  */
 .hero {
   margin-top: -60px;
