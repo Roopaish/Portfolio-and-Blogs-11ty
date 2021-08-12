@@ -30,7 +30,8 @@ li {
 
 :root {
   --c-title: hsl(251, 75%, 22%);
-  --c-title-light: hsl(224, 75%, 87%);
+  --c-title-light: hsl(0, 0%, 0%);
+  --c-light: hsl(224, 75%, 87%);
   --c-title-summary: #4c5a6b;
   --c-theme: white;
 }
@@ -71,13 +72,16 @@ nav ul {
   letter-spacing: 2px;
   font-weight: 700;
   line-height: 30px;
-  color: var(--c-title);
 }
 
-@media (max-width:400px) {
-  nav ul{
-    gap:0px;
+@media (max-width: 400px) {
+  nav ul {
+    gap: 0px;
   }
+}
+
+nav ul li a {
+  color: var(--c-title);
 }
 
 nav ul li {
@@ -89,10 +93,6 @@ nav ul li {
 nav ul li:hover {
   color: var(--c-title-light);
   border-bottom: 2px solid #e93a7d;
-}
-
-nav u li:active {
-  background-color: #e93a7d;
 }
 
 /* Blogs  */
@@ -107,7 +107,7 @@ nav u li:active {
   text-align: center;
   background-image: url(https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80);
   background-repeat: no-repeat;
-  /* box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.418); */
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.5);
   background-size: cover;
 }
 
@@ -123,7 +123,7 @@ nav u li:active {
 .featured-blogs {
   margin-top: -30px;
   padding-top: 80px;
-  background: linear-gradient(var(--c-title-light), white);
+  background: linear-gradient(var(--c-light), white);
   border-radius: 30px 30px 0 0;
 }
 
