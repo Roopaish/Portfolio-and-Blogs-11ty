@@ -63,6 +63,7 @@ nav {
 nav ul {
   width: max-content;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 
   font-size: 16px;
@@ -161,6 +162,13 @@ nav u li:active {
 
 .blog-item:nth-child(3n + 8) {
   grid-row: span 2;
+}
+
+@media (max-width: 673px) {
+  .blog-item:nth-child(n) {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
 }
 
 .blog-item::after {
