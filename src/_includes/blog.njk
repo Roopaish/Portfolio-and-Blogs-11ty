@@ -1,0 +1,21 @@
+---
+layout: 'base.njk'
+---
+
+<main class="blog">
+  <div class="container">
+    <figure>
+      <img src="{{ image }}" alt="">
+    </figure>
+    <div class="blog-title">
+      {{ title }}
+    </div>
+    <div class="tags">
+      <span class="tag">Tech</span>
+      <span class="tag">Featured</span>
+    </div>
+    <div class="content">
+      {{ content | safe }}
+    </div>
+  </div>
+</main>

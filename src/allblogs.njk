@@ -1,0 +1,29 @@
+---
+layout: 'base.njk'
+title: All Blogs
+author: Rupesh Budhathoki, Roopaish
+description: Roopaish All blogs 
+keyword: Blogs,portfolio,roopaish,tech,coding,web,dev
+image: 
+url: 
+CSSFile: style.css
+---
+<main class="blogs">
+
+  <section class="blogs-content all">
+    <div class="container">
+      <h1 class="primary-title">Blog Post</h1>
+      <p class="primary-summary">Few blogs in programming journey.</p>
+
+      <section class="blog-list">
+
+        {%- for post in collections.post | reverse -%}}
+          {{ post.data.title }}
+        {%- endfor -%}}
+
+
+      </section>
+
+    </div>
+  </section>
+</main>

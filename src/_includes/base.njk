@@ -5,27 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-  <meta name="author" content={{ author }}>
-  <meta name="description" content={{ description }}>
-  <meta name="keyword" content={{ keyword }}>
+  <meta name="author" content="{{ author }}">
+  <meta name="description" content="{{ description }}">
+  <meta name="keyword" content="{{ keyword }}">
 
-  <meta property="og:title" content={{ title }}/>
-  <meta property="og:description" content={{ description }} />
-  <meta property="og:image" content={{ image }}/>
-  <meta property="og:url" content={{ url }} />
+  <meta property="og:title" content="{{ title }}"/>
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:image" content="{{ image }}"/>
+  <meta property="og:url" content="{{ url }}" />
   <meta property="og:type" content="blog" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={{ title }} />
-  <meta name="twitter:description" content={{ description }}/>
-  <meta name="twitter:image" content={{ image }}/>
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}"/>
+  <meta name="twitter:image" content="{{ image }}"/>
 
   <title>{{ title }}</title>
 
   {# <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" /> #}
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/{{ CSSFile }}">
+  <style>{{ customCSS }}</style>
 </head>
 <body>
-  
+  {% include 'header.njk' %}
+  {{ content | safe }}
+  {% include 'footer.njk' %}
 </body>
 </html>
