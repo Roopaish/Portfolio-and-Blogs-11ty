@@ -112,5 +112,6 @@ Installing Flutter with Android Studio especially when you are limited by hardwa
 - You can now use [VSCode](https://code.visualstudio.com/) with dart and flutter extensions
 - I recommend using web browser as an emulator rather than using android emulator because it requires comparatively less resources.
 
-## Happy Fluttering! 
+## Happy Fluttering!
+
 <img src="https://thumbs.gfycat.com/MajorFantasticArgentineruddyduck-max-1mb.gif" alt="Fluttering">
