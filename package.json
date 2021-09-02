@@ -2,16 +2,23 @@
   "name": "Portfolio-and-Blogs",
   "version": "1.0.0",
   "description": "This repo contains personal portfolio and blogs.",
-  "main": "index.js",
+  "main": ".eleventy.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "clean": "rimraf public",
+    "start": "npm run serve",
+    "serve": "npm run clean && cross-env NODE_ENV=development eleventy --serve",
+    "watch": "npm run clean && cross-env NODE_ENV=development eleventy --watch",
+    "build": "npm run clean && cross-env NODE_ENV=production eleventy",
+    "debug": "DEBUG=Eleventy* npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Roopaish/Portfolio-and-Blogs.git"
   },
-  "keywords": [],
+  "keywords": [
+    "blogs",
+    "portfolio"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -19,6 +26,13 @@
   },
   "homepage": "https://github.com/Roopaish/Portfolio-and-Blogs#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "cross-env": "^7.0.3",
+    "@tailwindcss/typography": "^0.3.1",
+    "eleventy-plugin-tailwindcss": "^0.3.0",
+    "html-minifier": "^4.0.0",
+    "luxon": "^1.24.1",
+    "rimraf": "^3.0.2",
+    "terser": "^4.8.0"
   }
 }

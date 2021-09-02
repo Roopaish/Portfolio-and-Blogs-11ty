@@ -1,32 +1,16 @@
 ---
-layout: 'base.njk'
-title: Roopaish | Blogs
-author: Rupesh Budhathoki, Roopaish
-description: Roopaish Featured blogs 
-keyword: Blogs,portfolio,roopaish,tech,coding,web,dev
-image: 
-url: 
-CSSFile: style.css
+layout: default
+pagination:
+    data: collections.pagedPosts
+    size: 1
+    alias: paged
+permalink: "{% if paged.number > 1 %}page/{{ paged.number }}/{% endif %}index.html"
 ---
-<main class="blogs">
 
-  <section class="hero">
-    <div class="container">
-      <h1 class="primary-title">Welcome to my blog.</h1>
-      <p class="hero-intro">A journey through Web and Mobile Development and more.</p>
-      <p class="hero-intro">Have a nice reading!</p>
-    </div>
-  </section>
+<div class="flex flex-wrap -mx-2">
+    {% include "partials/post-grid.njk" %}
+</div>
 
-  <section class="blogs-content featured">
-    <div class="container">
-      <h1 class="primary-title">Featured Blogs</h1>
-      <p class="primary-summary">Few featured blogs in programming journey.</p>
-
-      <section class="blog-list">
-        
-      </section>
-
-    </div>
-  </section>
-</main>
+{% if collections.posts.length > site.paginate %}
+{% include "partials/paginator.njk" %}
+{% endif %}
