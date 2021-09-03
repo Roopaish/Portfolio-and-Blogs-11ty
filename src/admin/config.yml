@@ -4,6 +4,7 @@ backend:
 collections:
   - name: "blog"
     label: "Blog"
+    folder: "src/posts"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
