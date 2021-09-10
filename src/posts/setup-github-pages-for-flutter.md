@@ -10,7 +10,7 @@ tags:
 ---
 # Setup Github Pages for Flutter Web-App with Github Actions
 
-Use Github Actions to auto build the github-pages as soon as you push it to github.<br/>
+Use Github Actions to auto build the github-pages as soon as you push it to github.
 [Refrence](https://github.com/Roopaish/Ultimate-Flutter-App)
 
 1. Inside project folder or repository, add a new folder '/.github/workflows'.
