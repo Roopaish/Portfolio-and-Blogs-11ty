@@ -3,9 +3,8 @@ title: "Install Flutter Without Android Studio"
 description: "Installing Flutter with Android Studio especially when you are limited by hardware resources may not be an optimal thing to do"
 metaKeywords: "Install Flutter, VSCode, Android Studio, Old Hardware"
 date: 2021-09-02T12:00
-thumb: "https://miro.medium.com/max/1400/1*C0Qm8bggdn3KUGnlkT50lw.jpeg"
+thumb: "https://i.postimg.cc/VLr0Ln6v/install-flutter.png"
 tags:
-  - popular
   - flutter
 ---
 
