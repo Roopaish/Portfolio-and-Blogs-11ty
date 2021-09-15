@@ -20,23 +20,20 @@ Use Github Actions to auto build the github-pages as soon as you push it to gith
 2. Under workflows, create publish.yaml file and paste it
 
 ```yaml
+name: Gh-Pages
 
-  name: Gh-Pages
+on:
+  push:
+    branches: [master]
 
-  on:
-    push:
-      branches: [master]
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-
-      steps:
-        - uses: actions/checkout@v2 # Only works with v2
-        - uses: subosito/flutter-action@v1
-        - uses: erickzanardo/flutter-gh-pages@v6
-
-
+    steps:
+      - uses: actions/checkout@v2 # Only works with v2
+      - uses: subosito/flutter-action@v1
+      - uses: erickzanardo/flutter-gh-pages@v6
 ```
 
 3. Commit and Publish it to github.
@@ -55,20 +52,20 @@ Use Github Actions to auto build the github-pages as soon as you push it to gith
 
 9. Inside head tag find base url
 ```html
-  <head>
-    .....
-    <base href="/" />
-    .....
-  </head>
+<head>
+  .....
+  <base href="/" />
+  .....
+</head>
 ```
 10. Change base url to your repo name (or directory name in case of custom website)
 
 ```html
-  <head>
-    .....
-    <base href="/your-repo-name/" />
-    .....
-  </head>
+<head>
+  .....
+  <base href="/your-repo-name/" />
+  .....
+</head>
 ```
 
 **Done! Now your Web-App is live. Now Pat yourself!**

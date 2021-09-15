@@ -34,7 +34,7 @@ Installing Flutter with Android Studio especially when you are limited by hardwa
 
 - Search for environment variable in search box, click on "Edit the system environment variable" then on Environment Variable. Under "User variable" section click on path then on edit. Click new and paste the path you copied.
 
-  <img src="https://i.postimg.cc/Hk3dmQHb/flutter-bin.png" alt="flutter-bin"/>
+<img src="https://i.postimg.cc/Hk3dmQHb/flutter-bin.png" alt="flutter-bin"/>
 
 - Press ok > ok > ok
 
@@ -50,11 +50,11 @@ Installing Flutter with Android Studio especially when you are limited by hardwa
 
 - Set Variable name: JAVA_HOME and Variable value: W:\Utilities\openjdk8 and click ok
 
-  <img src="https://i.postimg.cc/HkTdFSGp/java-home.png" alt="java-home"/>
+<img src="https://i.postimg.cc/HkTdFSGp/java-home.png" alt="java-home"/>
 
 - Again Under "System Variable", click on path then on edit. Click new and add %JAVA_HOME%\bin
 
-  <img src="https://i.postimg.cc/256mSV8M/Java-bin.png" alt="Java-bin"/>
+<img src="https://i.postimg.cc/256mSV8M/Java-bin.png" alt="Java-bin"/>
 
 - Press ok>ok>ok
 
@@ -70,14 +70,14 @@ Installing Flutter with Android Studio especially when you are limited by hardwa
 - Type this command and type y
 
 ```bash
-    sdkmanager.bat "build-tools;30.0.0" ./sdk_path = ../
+sdkmanager.bat "build-tools;30.0.0" ./sdk_path = ../
 ```
 
 - See [Platforms versions](https://developer.android.com/studio/releases/platforms) releases and choose your preferred version or API Level. At the time of this writing latest release is 30.
 - Type this command
 
 ```bash
-    sdkmanager.bat "platforms;android-30" ./sdk_path = ../
+sdkmanager.bat "platforms;android-30" ./sdk_path = ../
 ```
 
 - Above command will download and install the SDK platform inside Android folder.
@@ -86,11 +86,11 @@ Installing Flutter with Android Studio especially when you are limited by hardwa
 
 - Set Variable name: ANDROID_HOME and Variable value: W:\Utilities\Android and click ok
 
-  <img src="https://i.postimg.cc/v86YngLd/android-home.png" alt="android-home"/>
+<img src="https://i.postimg.cc/v86YngLd/android-home.png" alt="android-home"/>
 
 - Under "System variable", click on path. Click on new and add this %ANDROID_HOME%\platform-tools
 
-  <img src="https://i.postimg.cc/sDY3nkN6/Android-platform-tools.png" alt="Android-platform-tools"/>
+<img src="https://i.postimg.cc/sDY3nkN6/Android-platform-tools.png" alt="Android-platform-tools"/>
 
 ## 5. Final
 
@@ -98,13 +98,13 @@ Installing Flutter with Android Studio especially when you are limited by hardwa
 - Run and keep on typing y
 
 ```bash
-    flutter doctor --android-licenses
+flutter doctor --android-licenses
 ```
 
 - Run and see if there's any issue
 
 ```bash
-    flutter doctor
+flutter doctor
 ```
 
 - Now Enjoy Flutter without android studio
