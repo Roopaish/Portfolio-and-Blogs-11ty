@@ -70,14 +70,14 @@ Installing Flutter with Android Studio especially when you are limited by hardwa
 - Type this command and type y
 
 ```bash
-sdkmanager.bat "build-tools;30.0.0" ./sdk_path = ../
+sdkmanager.bat "build-tools;30.0.0" --/sdk_root = ../
 ```
 
 - See [Platforms versions](https://developer.android.com/studio/releases/platforms) releases and choose your preferred version or API Level. At the time of this writing latest release is 30.
 - Type this command
 
 ```bash
-sdkmanager.bat "platforms;android-30" ./sdk_path = ../
+sdkmanager.bat "platforms;android-30" --/sdk_root = ../
 ```
 
 - Above command will download and install the SDK platform inside Android folder.
