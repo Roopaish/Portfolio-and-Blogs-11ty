@@ -80,7 +80,13 @@ sdkmanager.bat "build-tools;30.0.0" --/sdk_root = ../
 sdkmanager.bat "platforms;android-30" --/sdk_root = ../
 ```
 
-- Above command will download and install the SDK platform inside Android folder.
+- Now run this
+
+```bash
+sdkmanager.bat --install "cmdline-tools;latest" --/sdk_root = ../
+```
+
+- Above command will download and install the SDKs inside Android folder.
 
 - Search for environment variable in search box, click on "Edit the system environment variable" then on Environment Variable. Under "System variable" section click on new.
 
