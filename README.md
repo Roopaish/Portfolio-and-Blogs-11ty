@@ -1,3 +1,5 @@
+**Discontinued**
+
 This repo contains personal portfolio and blogs.
 
 ### SEO
